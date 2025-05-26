@@ -357,7 +357,7 @@ button:hover,
 
 .schedule-table,
 .fee-table {
-  width: 85%;
+  width: 75%;
   /* slightly smaller width */
   margin: 10px auto;
   /* center the table */
