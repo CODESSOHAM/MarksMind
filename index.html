@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - MarksMind</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', sans-serif;
+            background: #f4f9fc;
+            color: #333;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #343a40;
+            padding: 1rem 2rem;
+        }
+
+        .logo {
+            font-size: 1.8rem;
+            color: #fff;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+        }
+
+        .nav-links li {
+            margin-left: 20px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #f8f9fa;
+            font-size: 1.3rem;
+            padding: 8px 12px;
+            border-radius: 5px;
+            transition: all 0.3s ease-in-out;
+        }
+
+        /* Highlight on hover */
+        .nav-links a:hover {
+            background-color: #ffc107;
+            color: #343a40;
+        }
+
+        /* Keep selected link highlighted */
+        .nav-links a.active {
+            background-color: #ffc107;
+            color: #343a40;
+        }
+
+
+        .hero {
+            background: linear-gradient(to right, #6dd5fa, #2980b9);
+            color: white;
+            padding: 3rem 2rem;
+            text-align: center;
+            animation: fadeIn 1.5s ease;
+        }
+
+        .hero h1 {
+            font-size: 2.8rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+        }
+
+        .features {
+            padding: 2rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .features h2 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .features ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .features ul li {
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            padding: 1rem 1.5rem;
+            width: 280px;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            animation: slideUp 0.7s ease;
+        }
+
+        .features ul li:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+        }
+
+        .features p {
+            margin: 0.5rem 0;
+        }
+
+        .features img {
+            width: 100px;
+            margin: 1rem 0;
+            border-radius: 50%;
+        }
+
+        .enroll-btn {
+            margin-top: 2rem;
+            padding: 2rem 4rem;
+            background: #27ae60;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 2rem;
+            cursor: pointer;
+            transition: background 0.3s ease;
+            animation: pulse 2s infinite;
+            text-decoration: none;
+        }
+
+        .enroll-btn:hover {
+            background: #1e8449;
+        }
+
+        .footer {
+            background: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+            margin-top: 2rem;
+        }
+
+        .open {
+
+            background-color: #ffeb3b;
+            padding: 1rem 2rem;
+            border: 2px solid #f44336;
+            border-radius: 12px;
+            box-shadow: 0 0 20px rgba(255, 0, 0, 0.6);
+            font-weight: bold;
+            font-size: 1.3rem;
+            color: #d32f2f;
+            animation: blink 1.2s infinite alternate, pulse 2s infinite;
+            width: 80%;
+            max-width: 800px;
+            margin: 1.5rem auto;
+        }
+
+        .open p {
+            margin: 0.3rem 0;
+            text-align: center;
+        }
+
+        /* Blinking effect */
+        @keyframes blink {
+            0% {
+                opacity: 1;
+            }
+
+            100% {
+                opacity: 0.5;
+            }
+        }
+
+
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes slideUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+            }
+
+            50% {
+                transform: scale(1.05);
+            }
+
+            100% {
+                transform: scale(1);
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="logo"><img src="images/Logo_MM.png" alt="" height="85px" style="border-radius: 5px;"></div>
+        <ul class="nav-links">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="schedule.html">Schedule</a></li>
+            <li><a href="fees.html">Fee Structure</a></li>
+            <li><a href="about.html">About Us</a></li>
+        </ul>
+    </nav>
+
+    <section class="hero">
+        <h1>Welcome to MarksMind 📘</h1>
+        <p>Inspire minds 🧠, Ignite skills 🎓</p>
+        <div class="open">
+            <p>🚨 <strong>Classes are now open!!</strong> ONLINE</p>
+            <p>📘 For Classes <strong>VII</strong> & <strong>VIII</strong></p>
+        </div>
+    </section>
+
+    <section class="features">
+        <a href="https://forms.gle/YOUR_GOOGLE_FORM_LINK" target="_blank" class="enroll-btn">📋 Enroll Now</a>
+        <h2>Why MarksMind? 🤔</h2>
+        <ul>
+            <li>
+                <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="mentor">
+                👨‍🏫 Expert mentors for each subject
+            </li>
+            <li>
+                <img src="https://cdn-icons-png.flaticon.com/128/18286/18286052.png" alt="interactive">
+                💻 Interactive and engaging online classes
+            </li>
+            <li>
+                <img src="https://cdn-icons-png.flaticon.com/512/1048/1048953.png" alt="assessment">
+                📊 Regular assessments and performance tracking
+            </li>
+            <li>
+                <img src="https://cdn-icons-png.flaticon.com/128/3240/3240831.png" alt="doubt">
+                ❓ Personal doubt-clearing sessions
+            </li>
+            <li>
+                <img src="https://cdn-icons-png.flaticon.com/128/18419/18419992.png" alt="affordable">
+                💸 Affordable pricing with subject-wise discounts
+            </li>
+        </ul>
+
+        <h2>Contact Information 📞</h2>
+        <p>📧 Email: support@marksmind.com</p>
+        <p>📱 Phone: +91-7003659480  OR  +91-6289794835 </p>
+        <p>🌐 Location: Online Education Platform</p>
+
+
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2025 MarksMind. All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>
