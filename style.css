@@ -7,10 +7,11 @@
 }
 
 body {
-  background: linear-gradient(to right, #f8f9fa, #e9ecef);
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #f4f9fc;
   color: #333;
-  line-height: 1.6;
-  scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 /* Navigation Bar */
