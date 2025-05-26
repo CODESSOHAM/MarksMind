@@ -359,7 +359,7 @@ button:hover,
 .fee-table {
   width: 85%;
   /* slightly smaller width */
-  margin: 20px auto;
+  margin: 10px auto;
   /* center the table */
   border-collapse: collapse;
   font-size: 0.9rem;
