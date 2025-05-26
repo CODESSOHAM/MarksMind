@@ -282,7 +282,7 @@ button:hover,
     background-color: #343a40;
     padding: 1rem 2rem;
     flex-wrap: wrap;
-    width: 100%;
+    width: 105%;
     box-sizing: border-box;
   }
 
@@ -295,9 +295,13 @@ button:hover,
   .nav-links li {
     margin: 10px 0;
   }
+  .hero{
+    width:105% ;
+  }
 
   .hero h1 {
     font-size: 2rem;
+  
   }
 
   .fee-table th,
