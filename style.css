@@ -27,7 +27,8 @@ body {
 }
 
 .logo {
-  font-size: 1.8rem; /* same as before */
+  font-size: 1.8rem;
+  /* same as before */
   color: #fff;
   font-weight: bold;
   letter-spacing: 1px;
@@ -164,7 +165,8 @@ body {
 }
 
 /* Buttons */
-button, .enroll-button {
+button,
+.enroll-button {
   background-color: #007bff;
   color: #fff;
   padding: 12px 24px;
@@ -179,7 +181,8 @@ button, .enroll-button {
   box-shadow: 0 4px 14px rgba(0, 123, 255, 0.2);
 }
 
-button:hover, .enroll-button:hover {
+button:hover,
+.enroll-button:hover {
   background-color: #0056b3;
   transform: scale(1.05);
   box-shadow: 0 6px 20px rgba(0, 86, 179, 0.4);
@@ -224,8 +227,13 @@ button:hover, .enroll-button:hover {
 
 /* Animations */
 @keyframes fadeIn {
-  from { opacity: 0; }
-  to { opacity: 1; }
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
 }
 
 @keyframes fadeInUp {
@@ -233,6 +241,7 @@ button:hover, .enroll-button:hover {
     transform: translateY(40px);
     opacity: 0;
   }
+
   100% {
     transform: translateY(0);
     opacity: 1;
@@ -244,6 +253,7 @@ button:hover, .enroll-button:hover {
     transform: translateX(30px);
     opacity: 0;
   }
+
   100% {
     transform: translateX(0);
     opacity: 1;
@@ -255,6 +265,7 @@ button:hover, .enroll-button:hover {
     transform: scale(0.9);
     opacity: 0;
   }
+
   100% {
     transform: scale(1);
     opacity: 1;
@@ -281,7 +292,8 @@ button:hover, .enroll-button:hover {
     font-size: 2rem;
   }
 
-  .fee-table th, .fee-table td {
+  .fee-table th,
+  .fee-table td {
     padding: 8px;
     font-size: 0.95rem;
   }
@@ -305,7 +317,12 @@ button:hover, .enroll-button:hover {
     font-size: 1rem;
   }
 
-  .fee-table, .fee-table thead, .fee-table tbody, .fee-table th, .fee-table td, .fee-table tr {
+  .fee-table,
+  .fee-table thead,
+  .fee-table tbody,
+  .fee-table th,
+  .fee-table td,
+  .fee-table tr {
     display: block;
     width: 100%;
   }
@@ -319,7 +336,7 @@ button:hover, .enroll-button:hover {
     background: #fff;
     padding: 10px;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
   }
 
   .fee-table td {
@@ -337,4 +354,37 @@ button:hover, .enroll-button:hover {
     color: #555;
     text-align: left;
   }
+}
+
+.schedule-table,
+.fee-table {
+  width: 90%;
+  /* slightly smaller width */
+  margin: 30px auto;
+  /* center the table */
+  border-collapse: collapse;
+  font-size: 0.9rem;
+  /* smaller text */
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+}
+
+.schedule-table th,
+.schedule-table td,
+.fee-table th,
+.fee-table td {
+  padding: 8px 10px;
+  /* reduced padding */
+  border: 1px solid #dee2e6;
+  text-align: center;
+}
+
+.schedule-table th,
+.fee-table th {
+  background-color: #343a40;
+  color: #fff;
+}
+
+.schedule-table tbody tr:nth-child(even),
+.fee-table tbody tr:nth-child(even) {
+  background-color: #f1f1f1;
 }
