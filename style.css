@@ -88,7 +88,31 @@ body {
 
 /* Responsive Styles */
 
+@media (max-width: 768px) {
+  .nav-links a {
+    font-size: 0.9rem;
+    padding: 6px 8px;
+  }
 
+  .nav-links li {
+    margin-left: 10px;
+  }
+
+  .logo {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .nav-links a {
+    font-size: 0.8rem;
+    padding: 5px 6px;
+  }
+
+  .logo {
+    font-size: 1.2rem;
+  }
+}
 
 /* Hero Section */
 .hero {
