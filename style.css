@@ -347,7 +347,7 @@ button:hover,
 
 @media (max-width: 760px) {
   .features {
-    width: 100%;
+    width: 90%;
   }
 
   .hero {
@@ -355,7 +355,7 @@ button:hover,
   }
 
   .high {
-    width: 100%;
+    width: 90%;
   }
 
   .hero h1 {
