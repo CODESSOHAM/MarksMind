@@ -89,7 +89,7 @@ body {
 /* ✅ RESPONSIVE: shrink font/padding so all items fit in one line */
 @media (max-width: 1024px) {
   .navbar{
-    width: 105%;
+    width: 100%;
   }
   .nav-links a {
     font-size: 1.15rem;
@@ -357,7 +357,7 @@ button:hover,
 
   .fee-table th,
   .fee-table td {
-    padding: 0;
+    padding: 8px;
     font-size: 0.95rem;
   }
 
