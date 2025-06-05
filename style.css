@@ -14,7 +14,6 @@ body {
   overflow-x: hidden;
 }
 
-/* Navigation Bar */
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -28,16 +27,18 @@ body {
 
 .logo {
   font-size: 1.8rem;
-  /* same as before */
   color: #fff;
   font-weight: bold;
   letter-spacing: 1px;
+  white-space: nowrap;
 }
 
 .nav-links {
   list-style: none;
   display: flex;
-  animation: fadeInRight 0.8s ease forwards;
+  flex-wrap: nowrap;
+  white-space: nowrap;
+  align-items: center;
 }
 
 .nav-links li {
@@ -54,6 +55,7 @@ body {
   position: relative;
 }
 
+/* Hover and Active States */
 .nav-links a::after {
   content: '';
   position: absolute;
@@ -79,15 +81,12 @@ body {
   color: #343a40;
 }
 
+/* Hide hamburger */
 .hamburger {
-  display: none;
-  font-size: 2rem;
-  color: #fff;
-  cursor: pointer;
+  display: none !important;
 }
 
-/* Responsive Styles */
-
+/* ✅ RESPONSIVE: shrink font/padding so all items fit in one line */
 @media (max-width: 1024px) {
   .nav-links a {
     font-size: 1.1rem;
@@ -132,6 +131,7 @@ body {
     font-size: 1.2rem;
   }
 }
+
 /* Hero Section */
 .hero {
   text-align: center;
