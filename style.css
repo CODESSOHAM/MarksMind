@@ -357,7 +357,7 @@ button:hover,
 
   .fee-table th,
   .fee-table td {
-    padding: 3px;
+    padding: 0;
     font-size: 0.95rem;
   }
 
