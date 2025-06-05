@@ -7,31 +7,48 @@
     <title>About Us - MarksMind</title>
 
     <style>
-        body {
+        * {
             margin: 0;
+            padding: 0;
+            box-sizing: border-box;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: #f9f9f9;
         }
 
-        /* NAVBAR (Original retained) */
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', sans-serif;
+            background: #f4f9fc;
+            color: #333;
+            overflow-x: hidden;
+        }
+
         .navbar {
             display: flex;
             justify-content: space-between;
             align-items: center;
             background-color: #343a40;
             padding: 1rem 2rem;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
         }
+
 
         .logo {
             font-size: 1.8rem;
             color: #fff;
             font-weight: bold;
             letter-spacing: 1px;
+            white-space: nowrap;
         }
+
 
         .nav-links {
             list-style: none;
             display: flex;
+            flex-wrap: nowrap;
+            white-space: nowrap;
+            align-items: center;
         }
 
         .nav-links li {
@@ -45,21 +62,102 @@
             padding: 8px 12px;
             border-radius: 5px;
             transition: all 0.3s ease-in-out;
+            position: relative;
         }
 
-        /* Highlight on hover */
+        /* Hover and Active States */
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 0%;
+            height: 2px;
+            background: #ffc107;
+            transition: 0.4s ease;
+        }
+
+        .nav-links a:hover::after {
+            width: 100%;
+        }
+
         .nav-links a:hover {
             background-color: #ffc107;
             color: #343a40;
         }
 
-
-
-        /* Keep selected link highlighted */
         .nav-links a.active {
             background-color: #ffc107;
             color: #343a40;
         }
+
+        /* Hide hamburger */
+        .hamburger {
+            display: none !important;
+        }
+
+        @media (max-width: 1024px) {
+            .nav-links a {
+                font-size: 1.15rem;
+                padding: 6px 10px;
+            }
+
+            .nav-links li {
+                margin-left: 15px;
+            }
+
+            .logo {
+                font-size: 1.3rem;
+            }
+
+            .logo img {
+                height: 40px;
+
+            }
+        }
+
+        @media (max-width: 768px) {
+            .nav-links a {
+                font-size: 0.95rem;
+                padding: 5px 8px;
+            }
+
+            .nav-links li {
+                margin-left: 10px;
+            }
+
+            .logo {
+                font-size: 1.1rem;
+
+            }
+
+            .logo img {
+                height: 40px;
+                /* 👈 Shrinks logo image */
+            }
+        }
+
+        @media (max-width: 480px) {
+            .nav-links a {
+                font-size: 0.8rem;
+                padding: 4px 6px;
+            }
+
+            .nav-links li {
+                margin-left: 6px;
+            }
+
+            .logo {
+                font-size: 1rem;
+            }
+
+            .logo img {
+                height: 40px;
+                /* 👈 Shrinks logo image */
+            }
+        }
+
+
 
         .hero {
             background: #f0f4ff;
@@ -273,41 +371,8 @@
             display: block;
         }
 
-        /* Responsive Navbar */
-        @media (max-width: 768px) {
-            .navbar {
-                flex-direction: column;
-                align-items: flex-start;
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-                background-color: #343a40;
-                padding: 1rem 2rem;
-                flex-wrap: wrap;
-                width: 100%;
-                box-sizing: border-box;
-            }
 
-            .nav-links {
-                flex-direction: column;
-                width: 100%;
-                padding: 0;
-            }
-
-            .nav-links li {
-                margin: 10px 0;
-            }
-
-            .nav-links a {
-                font-size: 1.1rem;
-                width: 100%;
-            }
-
-            .logo {
-                font-size: 1.5rem;
-                margin-bottom: 10px;
-            }
-        }
+   
 
         /* Responsive Hero Section */
         @media (max-width: 768px) {
