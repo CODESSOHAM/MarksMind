@@ -362,14 +362,11 @@ button:hover,
     font-size: 2rem;
 
   }
-  .schedule-table{
-    width: 80%;
-  }
 
   .fee-table th,
   .fee-table td {
-    padding: 2px;
-    font-size: 0.6rem;
+    padding: 8px;
+    font-size: 0.95rem;
   }
 
   .card-container {
