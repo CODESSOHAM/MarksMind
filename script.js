@@ -1,6 +1,10 @@
 // MarksMind - JavaScript for interaction
 
-// Example: Highlight the active nav link
+  function toggleMenu() {
+    const navLinks = document.querySelector('.nav-links');
+    navLinks.classList.toggle('active');
+  }
+  
 document.addEventListener("DOMContentLoaded", () => {
   const navLinks = document.querySelectorAll('.nav-links a');
   navLinks.forEach(link => {
