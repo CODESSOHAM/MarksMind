@@ -88,9 +88,10 @@ body {
 
 /* ✅ RESPONSIVE: shrink font/padding so all items fit in one line */
 @media (max-width: 1024px) {
-  .navbar{
+  .navbar {
     width: 100%;
   }
+
   .nav-links a {
     font-size: 1.15rem;
     padding: 6px 10px;
@@ -345,12 +346,16 @@ button:hover,
 }
 
 @media (max-width: 760px) {
-  .features{
+  .features {
     width: 100%;
   }
 
   .hero {
-    width: 105%;
+    width: 100%;
+  }
+
+  .high {
+    width: 100%;
   }
 
   .hero h1 {
