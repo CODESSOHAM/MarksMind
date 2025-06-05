@@ -362,6 +362,9 @@ button:hover,
     font-size: 2rem;
 
   }
+  .schedule-table{
+    width: 80%;
+  }
 
   .fee-table th,
   .fee-table td {
