@@ -62,32 +62,6 @@
             cursor: pointer;
         }
 
-        /* Responsive Styles */
-        @media (max-width: 768px) {
-            .hamburger {
-                display: block;
-            }
-
-            .nav-links {
-                flex-direction: column;
-                position: absolute;
-                top: 100%;
-                right: 0;
-                background-color: #343a40;
-                width: 100%;
-                display: none;
-            }
-
-            .nav-links li {
-                margin: 0;
-                text-align: center;
-                padding: 1rem 0;
-            }
-
-            .nav-links.active {
-                display: flex;
-            }
-        }
 
 
         .hero {
@@ -328,7 +302,6 @@
         <div class="logo">
             <img src="images/Logo_MM.png" alt="MarksMind Logo">
         </div>
-        <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
         <ul class="nav-links">
             <li><a href="index.html" class="active">Home</a></li>
             <li><a href="schedule.html">Schedule</a></li>
