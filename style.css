@@ -115,6 +115,11 @@ body {
   .logo {
     font-size: 1.1rem;
   }
+
+    .logo img {
+    height: 30px; /* 👈 Shrinks logo image */
+  }
+
 }
 
 @media (max-width: 480px) {
