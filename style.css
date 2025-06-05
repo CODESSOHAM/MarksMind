@@ -347,7 +347,7 @@ button:hover,
 
 @media (max-width: 760px) {
   .features {
-    width: 90%;
+    width: 100%;
   }
 
   .hero {
