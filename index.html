@@ -55,6 +55,41 @@
             color: #343a40;
         }
 
+        .hamburger {
+            display: none;
+            font-size: 2rem;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            .hamburger {
+                display: block;
+            }
+
+            .nav-links {
+                flex-direction: column;
+                position: absolute;
+                top: 100%;
+                right: 0;
+                background-color: #343a40;
+                width: 100%;
+                display: none;
+            }
+
+            .nav-links li {
+                margin: 0;
+                text-align: center;
+                padding: 1rem 0;
+            }
+
+            .nav-links.active {
+                display: flex;
+            }
+        }
+
+
         .hero {
             background: linear-gradient(to right, #6dd5fa, #2980b9);
             color: white;
