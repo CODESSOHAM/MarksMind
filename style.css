@@ -365,8 +365,8 @@ button:hover,
 
   .fee-table th,
   .fee-table td {
-    padding: 8px;
-    font-size: 0.95rem;
+    padding: 4px;
+    font-size: 0.8rem;
   }
 
   .card-container {
